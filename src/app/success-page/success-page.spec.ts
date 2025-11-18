@@ -15,7 +15,7 @@ describe('SuccessPage', () => {
     fixture = TestBed.createComponent(SuccessPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
-  });
+  }); 
 
   it('should create', () => {
     expect(component).toBeTruthy();
