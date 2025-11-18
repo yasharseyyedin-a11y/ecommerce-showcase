@@ -1,0 +1,84 @@
+.home-link {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #007bff;
+  text-decoration: none;
+  margin-bottom: 24px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.home-link:hover {
+  background-color: #e6f0ff;
+  border-color: #007bff;
+}
+
+/* Grid layout for product cards. Cards side by side */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+/* Product card styling */
+.product-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.product-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
+  color: #212529;
+}
+
+.product-card p {
+  font-size: 1rem;
+  color: #6c757d;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.product-card button {
+  padding: 12px 18px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.25s ease;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Cart summary styling */
+.cart-summary {
+  background-color: #f8f9fa;
+  padding: 15px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #343a40;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,115 @@
+.cart-container {
+  margin-top: 20px;
+}
+
+.cart-items-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cart-total {
+  margin-top: 24px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #212529;
+  width: 100%; /* Make total take full width below items */
+}
+
+/* Each cart item fixed width, side by side */
+.cart-item {
+  background: #fff;
+  width: 280px; /* fixed width to align side by side */
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.cart-item:hover {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.cart-item h4 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin: 0;
+  color: #222;
+}
+
+.cart-item p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+}
+
+.cart-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.cart-buttons button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  min-width: 42px;
+  transition: background-color 0.25s ease;
+}
+
+.cart-buttons button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.cart-buttons button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+
+/* Action buttons */
+.btn-clear-cart,
+.btn-checkout {
+  background-color: #28a745;
+  color: white;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 12px;
+  border: none;
+  margin-right: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  min-width: 180px;
+}
+
+.btn-clear-cart:hover,
+.btn-checkout:hover {
+  background-color: #1e7e34;
+}
+
+/* Go To Home link styling */
+.home-link {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #007bff;
+  text-decoration: none;
+  margin-bottom: 24px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.home-link:hover {
+  background-color: #e6f0ff;
+  border-color: #007bff;
+}

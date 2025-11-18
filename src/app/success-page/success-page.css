@@ -1,0 +1,54 @@
+/* Style for the "Go To Home" link */
+.home-link {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #007bff;
+  text-decoration: none;
+  margin: 40px auto 20px;
+  padding: 14px 28px;
+  border-radius: 16px;
+  border: 2px solid transparent;
+  background-color: #f0f8ff;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  width: fit-content;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home-link:hover {
+  background-color: #cce4ff;
+  border-color: #007bff;
+  color: #004a99;
+}
+
+/* Style for the purchase success message */
+.purchase-success {
+  max-width: 440px;
+  margin: 30px auto 60px;
+  padding: 28px 24px;
+  background-color: #e6ffed;
+  border: 3px solid #3bb143;
+  border-radius: 20px;
+  color: #237a1c;
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(35, 122, 28, 0.3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  /* Optional animation */
+  animation: fadeInScale 0.5s ease forwards;
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
